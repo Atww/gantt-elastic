@@ -66,6 +66,7 @@
         }"
         :points="getPoints"
       ></polygon>
+      <text :x="getProgressWidth" y="20" text-anchor="middle" fill="white" font-size="20">{{task.labelPoly ? task.labelPoly : ''}}</text>
       <progress-bar :task="task" :clip-path="'url(#' + clipPathId + ')'"></progress-bar>
     </svg>
     <chart-text :task="task" v-if="root.state.options.chart.text.display"></chart-text>
@@ -91,6 +92,9 @@ export default {
     return {};
   },
   computed: {
+    getProgressWidth() {
+      return 50 + '%';
+    },
     /**
      * Get clip path id
      *
