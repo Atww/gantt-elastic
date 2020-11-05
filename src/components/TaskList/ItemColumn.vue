@@ -122,7 +122,8 @@ export default {
     },
 
     valueStyle() {
-      return { ...this.root.style['task-list-item-value'], ...this.column.style['task-list-item-value'] };
+      return {...this.task.style['task-list-item-value']}
+      //return { ...this.root.style['task-list-item-value'], ...this.column.style['task-list-item-value'] };  // old
     }
   }
 };
