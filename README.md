@@ -1,3 +1,15 @@
+Add new Label To Task Type 
+```
+const tasks = [
+ {
+    id: 3,
+    labelPoly: 'Text.', <-- Add This To Add Text To Polygon ( Only Type Text )
+    type: 'task',
+ },
+ ]
+```
+
+
 <h1>Gantt-elastic - Javascript Gantt Chart (editable, responsive)</h1>
 <h2>Javascript Gantt Chart for vue, jquery, vanilla js and other frameworks</h2>
 
